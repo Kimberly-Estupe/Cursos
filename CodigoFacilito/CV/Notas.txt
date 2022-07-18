@@ -1,0 +1,219 @@
+Lenguaje de Marcado
+Tiene reglas de distingir el texto del navegador o las anotaciones del desarrollador a estas anotaciones son marcado de texto
+-html - weeb
+-xml - desrollo movil
+
+<etiquetas que abren></etiquetas que cierran>
+html es lenguaje de mercado de hipertexto
+
+================================================
+-----------------EDITORES ONLINE----------------
+* https://jsbin.com/?html,output
+* https://codepen.io/features/
+================================================
+
+------------------------- ** PARTES DE HTML ** ----------------
+<!DOCTYPE html>
+Ndeclaracion de que version de html se usara
+
+<html lang="en" dir="ltr"></html> base
+
+*HEAD:
+  <head><!--Solo se utiliza una vez no puede repetirse, describe metadatos, es la pestaña del citio---->
+    <meta charset="utf-8"> <!---Si se puede repite--->
+    <title>CV Kimberly</title>
+  </head>
+
+*METADATOS:
+Describen a otros datos, como la fotografia
+Son info añadida sobre la info principal
+Descripcion puede usar hasta 150 caracteres
+
+Rprotoculo opengraf
+
+*BODY
+  <body></body>
+
+*Booleanos
+Pueden no tener valor, pero su presencia los convierte en verdaderos
+
+----- Titulos -----------
+<header> Encabezados, puede haber muchos
+h1: solo se utiliza una vez en la pag
+
+hipertexto
+
+etiqueta <a href="A donde vamos a ir"></a>
+Con target= "_blank" abre una nueva pestaña
+
+imagenes
+img src="Ubicacion imagen"
+
+--------------Agrupadores de elemetos---------
+DIP: Agrupa elementos
+section separa secciones de la pag
+
+
+--------------ESTILOS--
+Pading: para dar espacio
+font-weight:tamaño o tipo(cursiva) de fuente
+
+
+
+
+
+
+
+
+===================== ** SERVIDORES ** =====================
+Para iniciar servidor local.
+npm install -g node-static
+colocar la la ruta del cv en terminal
+static -p 8000
+Ir a localhost:8000
+
+localhost: hostname es una etiqueta asignado a un dispositivo dentro de la red
+el localhost es la red dentro de mi computadora
+
+Puerto-: puntos de entrada aplicaciones conexiones conectadas en red, del
+0-1023 son puertos del sistema
+del 1024 en adelante los puedo usar
+
+Por default el puerto 8080 es del http entre navegar y srvidor web
+
+el nombre inicial siempre debe ser index.html
+
+
+
+
+
+========================= ** CSS ** =======================
+Para utilizarlos en html
+<link href="ruta/doc.css" rel="stylesheet">
+rel define la relacion entre el documento importado y el actual
+
+--> Selectores: selector{
+  se definene propiedades css
+}
+
+--> Selectores de nombre:
+p{propiedades}
+
+Selectores de clase, al codigo en html se le da una clase
+<div class="nuevaclase">solo puede tener una etiqueta class, si quiero poner varios tipos de clase sieria
+<div class="nuevaclase1 clase2">
+en css:
+.nuevaclase{propiedades}
+
+--> id
+<div id="IdUnico"> solo puede tener un unico id y solo puede ser asignado una vez
+en css:
+#IdUnico{}
+
+height: unicad de medida es vh y es medida en %
+width unicad de medida es vw y es medida en %
+
+Para centrar un contenedor
+display: flex ; es una herramienta
+align-items: center;
+justify-content: center;
+
+line-height:  separacion entre parrafos
+text-decoration: none;  quita las lineas en los hipertextos
+text-trasform: uppercase; Todo el mayuscula
+border-spacion: 0; moidfica la sepacion en tabla
+
+
+
+-------  SUBCLASES
+.table tr:nth-child(even){}
+even: pares
+odd: impares
+
+
+
+Shohand property: podemos poner vairas propiedades en una sola:
+
+Padding-bottom: 1;
+Padding-top: 2;
+Padding: arriba derecha abajo, izquierda; sentido de la agujas del reloj;
+
+Padding: arriba/abajo izquierda/derecha;
+Padding: 1em; se aplica a todos los lados;
+
+-----------
+Presedencia.
+-----------
+en HTML:
+important
+style
+
+Encss
+selector
+selector de clase, atributo y pseudo
+selector de tipo y pseudo elementos
+
+
+-----------
+Posicion.
+-----------
+static
+relative
+absolute
+fixed: es relativo a la pantalla
+sticky
+
+a:hover{} indica que se pondra en ese estado al pasar al mause sobre el
+a:visted{} si ya fue visitado
+a.active{} boton activado/oprimido
+a.focus{} cuando esta el foto con las teclas (tab)
+
+
+en imagenes.
+float: left; el texto fluje a la derecha
+margin-right: agrega margenes
+height: 100px; reduce la imagen a esa altura
+
+
+---------------
+Media queries
+---------------
+@megia (max-with:500px){estable propiedades para pantallas de este tamaño}
+
+seudoclase:
+td: nth-of-type(1){selecciona la primera fila de los atributos del mismo tipo}
+
+---------------
+Mobil fist
+---------------
+
+Primero se diseña para las pantallas mas pequeñas y mas utilizadas, luego para las pantallas mas grandes
+
+
+========================= **  JS ** =========================
+Mutiplaraforma
+Creado anos 90 uando Netscape desarrolló el lenguaje exclusivamente para ejecutarse en un navegador, con el propósito de realizar sitios dinámicos que pudieran, a través de un script de programación, interactuar con el usuario.
+
+
+****** DOM - Document Object Model ******
+representación de nuestro sitio web en forma de árbol
+El DOM le permite a JavaScript acceder, recorrer, crear, reemplazar, editar y eliminar los elementos HTM
+
+<script src="./js/main.js">Debe ir al final de la pagina </script>
+
+
+
+Utilizacion del Dom
+Document.querySelector("elemento_name")/ devuelve un elemento
+Document.querySelectorAll("elemento_name")/ devuelve varios elementos
+.clase
+#etiquetas
+div nombre
+
+
+addEventListener ('click', funtion(){
+Funcion
+})
+
+SetTimeout - lo hace una vez despues de cierto tiempo
+setInterval - es un ciclo repetitivo
