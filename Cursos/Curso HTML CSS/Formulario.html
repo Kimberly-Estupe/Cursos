@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'><!-------Esta etiqueta valida caracteres raros------>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Formulario</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+    <link rel="stylesheet" href="styleI.css">
+</head>
+<body>
+    <h1>Formulario</h1>
+    <form action="">
+        <label for="numero">NUMERO ID: </label>
+        <input type="number" name="numero" id="numero" placeholder="Ingrese un numero">
+        <br><br>
+        
+        <label for="nombre">Nombre: </label> 
+        <input type="text" name="nombre" id="nombre">
+        <br><br>
+
+        <label for="email">Email: </label> 
+        <input type="text" name="email" id="email">
+
+        <br><br>
+        <label for="pass">Contraseña: </label>
+        <input type="password" name="pass" id="pass" >
+
+        <br><br>
+        <label for="edad">Edad: </label>
+        <input type="number" name="edad" id="edad" min="0" max="200" step="4">
+
+        <br><br>
+        <label for="nacimiento">Fecha de Nacimiento: </label>
+        <input type="date" name="nacimiento" id="nacimiento" >
+
+        <br><br>
+        <label for="comentario">Comentarios </label>
+        <textarea name="comentario" id="comentario" cols="30" rows="10"></textarea>
+
+        <br><br>
+
+        <input type="Submit" value="Enviar" name="Guardar">
+        <button type="reset">Reset</button>
+        <button type="submit">Submit</button>
+        <br><br>
+        <a href="Index.html">Regresar</a>
+
+
+    
+    <br><br><hr>
+    <h2>Botones</h2>
+    <table border="1px">
+        <tr>
+            <th>types</th>
+            <th>Uso</th>
+        </tr>
+        <tr>
+            <th>reset</th>
+            <th>Resetea, elimina la informacion</th>
+        </tr>
+        <tr>
+            <th>submit</th>
+            <th>Manda la información</th>
+        </tr>
+    </table>
+    <br><br><hr>
+    <h2>Notas</h2>
+    <p>Atributos</p>
+    <li>'value' es para darle un valor de inicio determinado</li>
+    <li>'readonly' sirve para que sea solo lectura</li>
+    <li>'disable' desabilita completamente el campo</li>
+    <li>'require' marca que ese campo es requerido</li>
+    <li>'autofocus' el puntero inicia en ese campo</li>
+    <li></li>
+</form>
+</body>
+</html>
